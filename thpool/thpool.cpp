@@ -1,12 +1,6 @@
 #ifndef THPOOLCPP
 #define THPOOLCPP
 
-#include<pthread.h>
-#include<iostream>
-#include<unistd.h>
-#include<signal.h>
-
-#include"thpool.hpp"
 
 void Job::init(decltype(routine) r,void* a,int p){
 	routine=r;args=a;priority=p;

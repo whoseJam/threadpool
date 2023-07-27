@@ -9,4 +9,8 @@ set(SRC_LIST sayHello/Hello.cpp)
 
 include_directories(thpool/include)
 
+add_subdirectory(thpool/src)
+
 add_executable(${PROJECT_NAME} ${SRC_LIST})
+
+target_link_libraries(${PROJECT_NAME} PUBLIC Thpool)

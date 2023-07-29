@@ -5,7 +5,8 @@ project(DataMaker)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED true)
 set(CMAKE_EXPORT_COMPILE_COMMANDS True)
-set(SRC_LIST sayHello/Hello.cpp)
+# set(SRC_LIST sayHello/Hello.cpp)
+set(SRC_LIST DAG/DAG.cpp)
 
 include_directories(thpool/include)
 
